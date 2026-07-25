@@ -1,0 +1,30 @@
+[package]
+name = "uztrans"
+version = "0.1.0"
+edition = "2021"
+description = "Transliterate Uzbek Latin digraphs (sh, ch, g', o') to their single-letter Unicode forms (ş, ç, ğ, õ) in prose, while leaving code, markup, and structured data untouched."
+license = "MIT"
+readme = "README.md"
+
+[[bin]]
+name = "uztrans"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+pulldown-cmark = "0.10"
+walkdir = "2"
+rayon = "1"
+thiserror = "1"
+globset = "0.4"
+owo-colors = "4"
+similar = "2"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"
+
+[profile.release]
+opt-level = 3
+lto = true
