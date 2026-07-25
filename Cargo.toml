@@ -5,6 +5,11 @@ edition = "2021"
 description = "Transliterate Uzbek Latin digraphs (sh, ch, g', o') to their single-letter Unicode forms (ş, ç, ğ, õ) in prose, while leaving code, markup, and structured data untouched."
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/mirrrjr/uztrans"
+homepage = "https://github.com/mirrrjr/uztrans"
+keywords = ["uzbek", "transliteration", "cli", "unicode", "markdown"]
+categories = ["command-line-utilities", "text-processing"]
+rust-version = "1.75"
 
 [[bin]]
 name = "uztrans"
