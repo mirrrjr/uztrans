@@ -1,6 +1,6 @@
 [package]
 name = "uztrans"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Transliterate Uzbek Latin digraphs (sh, ch, g', o') to their single-letter Unicode forms (ş, ç, ğ, õ) in prose, while leaving code, markup, and structured data untouched."
 license = "MIT"
