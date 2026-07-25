@@ -19,24 +19,24 @@ O'     -> Õ     o' -> õ
 
 ## 2. Installing
 
-Unzip the project, then from inside the `uztrans` folder:
+The easiest way, once published, is directly from crates.io:
+
+```bash
+cargo install uztrans
+```
+
+This downloads, builds, and installs the latest release straight to
+`~/.cargo/bin/uztrans` — no need to clone anything.
+
+### Installing from source
+
+If you'd rather build from this source tree instead (e.g. to test an
+unreleased change), unzip the project and, from inside the `uztrans`
+folder:
 
 ```bash
 cd uztrans
 cargo install --path .
-```
-
-This builds an optimized binary and copies it to `~/.cargo/bin/uztrans`.
-Make sure that folder is on your `PATH` (rustup's installer normally
-adds this for you automatically). Once installed, `uztrans` is
-available from any directory, in any terminal session.
-
-If you'd rather not install it system-wide, you can just build it and
-run it from the project folder instead:
-
-```bash
-cargo build --release
-./target/release/uztrans --help
 ```
 
 ## 3. Basic usage

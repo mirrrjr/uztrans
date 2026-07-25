@@ -19,25 +19,24 @@ dasturi, bunda kod, markup va tuzilgan ma'lumotlar õzgarişsiz qoladi.
 
 ## 2. Õrnatiş
 
-Loyihani oçib, uztrans papkasi içida quyidagini bajaring:
+Eng oson yõli — publish qilingandan sõng, tõğridan-tõğri crates.io'dan:
+
+```bash
+cargo install uztrans
+```
+
+Bu eng sõnggi versiyani yuklab oladi, yiğadi va `~/.cargo/bin/uztrans`
+manziliga õrnatadi — hech qanday loyihani nusxalab olişingiz şart emas.
+
+### Manba kodidan õrnatiş
+
+Agar shu manba kodidan yiğişni istasangiz (masalan, hali eʼlon
+qilinmagan õzgarişni sinab kõriş uçun), loyihani oçib, `uztrans` papkasi
+içida:
 
 ```bash
 cd uztrans
 cargo install --path .
-```
-
-Bu optimallaştirilgan dasturni yiğadi va uni `~/.cargo/bin/uztrans`
-manziliga nusxalaydi. Õşa papka `PATH` içida ekanligiga işonç hosil
-qiling (rustup õrnatuvçisi buni odatda avtomatik qõşadi). Õrnatilgandan
-sõng, `uztrans` istalgan papkadan, istalgan terminal seansidan
-foydalanişi mumkin bõladi.
-
-Agar butun tizim uçun õrnatişni xohlamasangiz, uni şunçaki yiğib,
-loyiha papkasidan işga tuşirişingiz mumkin:
-
-```bash
-cargo build --release
-./target/release/uztrans --help
 ```
 
 ## 3. Asosiy foydalanış
